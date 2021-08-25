@@ -33,11 +33,14 @@ class HomeScreen extends StatelessWidget {
                   children: [
                     ClipRRect(
                       borderRadius: BorderRadius.circular(15.0),
-                      child: Image(
-                        image: AssetImage(restaurant.imageUrl.toString()),
-                        width: 130.0,
-                        height: 130.0,
-                        fit: BoxFit.cover,
+                      child: Hero(
+                        tag: restaurant.imageUrl.toString(),
+                        child: Image(
+                          image: AssetImage(restaurant.imageUrl.toString()),
+                          width: 130.0,
+                          height: 130.0,
+                          fit: BoxFit.cover,
+                        ),
                       ),
                     ),
                     Expanded(

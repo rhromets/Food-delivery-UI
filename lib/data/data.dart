@@ -30,7 +30,8 @@ final _restaurant0 = Restaurant(
   menu: [_burrito, _steak, _pasta, _ramen, _pancakes, _burger, _pizza, _salmon],
 );
 final _restaurant1 = Restaurant(
-  imageUrl: 'assets/images/restaurant1.jpg',
+  imageUrl: 'asse'
+      'ts/images/restaurant1.jpg',
   name: 'Restaurant 1',
   address: '200 Main St, New York, NY',
   rating: 4,
