@@ -5,6 +5,8 @@ import 'package:food_delivery/screens/restaurant_screen.dart';
 import 'package:food_delivery/widgets/raiting_stars.dart';
 import 'package:food_delivery/widgets/recent_orders.dart';
 
+import 'cart_screen.dart';
+
 class HomeScreen extends StatelessWidget {
   _buildRestaurants() {
     List<Widget> restaurantList = [];
@@ -104,7 +106,12 @@ class HomeScreen extends StatelessWidget {
               'Cart (${currentUser.cart!.length})',
               style: TextStyle(fontSize: 20.0, color: Colors.white),
             ),
-            onPressed: () {},
+            onPressed: () => Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (_) => CartScreen(),
+              ),
+            ),
           ),
         ],
       ),
